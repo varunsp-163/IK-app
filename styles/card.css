@@ -1,0 +1,23 @@
+.onHover {
+  display: flex;
+  width: 333px;
+  height: 287px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  
+}
+
+.image-head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+
+

@@ -1,8 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,3 +12,56 @@
 .app {
   @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
+
+.logo-text {
+  color: #000;
+  font-family: "Inspiration", cursive;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.font-inter {
+  font-family: Inter;
+}
+
+.product-font {
+  background: linear-gradient(180deg, #de4396 0%, rgba(13, 28, 159, 0) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.team-font {
+  background: linear-gradient(225deg, #f7666f 0%, #406aff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* CSS */
+.image-slide-in {
+  display: block;
+  transform: translateX(130%);
+  transition: transform 1s ease-in-out;
+}
+
+.image-slide-in.active {
+  transform: translateX(0);
+}
+
+.line {
+  background: var(
+    --gradient-primary-bg,
+    linear-gradient(225deg, #f76680 0%, #57007b 100%)
+  );
+}
+
+.bg-gradient-text {
+  background-image: var(--gradient-primary-bg, linear-gradient(225deg, #F76680 0%, #57007B 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
